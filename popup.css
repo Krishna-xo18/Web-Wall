@@ -1,0 +1,289 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  width: 400px;
+  height: 350px;
+  background-color: #ffffff;
+}
+
+/* -----------------------------------Menu----------------------------------- */
+#menu {
+  background-color: #ff0008;
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+}
+
+#menu p {
+  color: #fcfcfc;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* -----------------------------------MainPage------------------------------- */
+
+#domainNameWrapper {
+  display: flex;
+  position: absolute;
+  top: 85px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#urlWrapper {
+  margin-left: 20px;
+}
+
+#urlName {
+  color: #ff7a00;
+  font-size: 20px;
+  font-family: "Poppins";
+  /* position:absolute; */
+  margin-top: 29%;
+  /* margin-left:27%; */
+  font-weight: bold;
+  line-height: 18px;
+}
+
+#content {
+  color: #000000;
+  font-size: 13px;
+  font-weight: light;
+  font-family: "Poppins";
+  /* position:absolute; */
+  margin-top: 30%;
+  /* margin-left:27%; */
+}
+
+#blockButton {
+  background-color: #5b98fa;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 50%;
+  margin-left: 20%;
+  width: 243px;
+  height: 52px;
+  font-size: 20px;
+  outline: none !important;
+  border-color: #fc4b4b;
+  font-weight: 400;
+}
+#blockButtonSocial {
+  background-color: #7af152;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 50%;
+  margin-left: 20%;
+  width: 243px;
+  height: 52px;
+  font-size: 20px;
+  outline: none !important;
+  border-color: #fc4b4b;
+  font-weight: 400;
+}
+#editBlockListButton {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  margin-top: 16px;
+  margin-left: 20%;
+  cursor: pointer;
+  width: 243px;
+  height: 52px;
+  color: #424752;
+  font-size: 20px;
+  position: absolute;
+  outline: none !important;
+  border-color: #eeeeee;
+  font-weight: 400;
+}
+
+#disabledButton {
+  background-color: #fc4b4b;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 50%;
+  margin-left: 20%;
+  width: 243px;
+  height: 52px;
+  font-size: 20px;
+  outline: none !important;
+  border-color: #fc4b4b;
+  font-weight: 400;
+  opacity: 0.3;
+}
+
+#goBack {
+  color: #1656e2;
+  font-size: 20px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 90%;
+  margin-left: 40%;
+  position: absolute;
+  bottom: 15px;
+}
+
+input[type="text"] {
+  width: 173px;
+  height: 22px;
+  line-height: 1;
+  margin-top: -15px;
+  font-size: 12px;
+  font-size: 12px;
+  border: 0.5px solid rgba(66, 71, 82, 0.6);
+  border-radius: 5px;
+  padding: 10px;
+}
+input[type="text"]::placeholder {
+  color: #000;
+}
+
+.tb {
+  display: table;
+  width: 100%;
+}
+.td {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+input,
+button {
+  color: #000;
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+#cover {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  top: 65px;
+}
+
+#cover h2 {
+  width: 100%;
+  width: 156px;
+  height: 22px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #424752;
+}
+button {
+  position: relative;
+  display: block;
+  width: 84px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#blockSiteList {
+  height: 200px;
+  position: absolute;
+  width: 100%;
+  margin-top: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#blockSiteList::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+#blockSiteList::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+#blockSiteList::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ff7a00;
+}
+
+.card {
+  box-shadow: 0 0px 4px 1px rgb(0 0 0 / 9%);
+  transition: 0.3s;
+  width: 95%;
+  margin-left: 10px;
+  margin-top: 9px;
+  border-radius: 3px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 12px 16px;
+  display: flex;
+  background: #ffffff;
+  box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+#urlListName {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+#unblockSiteButton {
+  background-color: #00a47d;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 5px;
+  outline: none !important;
+  border-color: #00a47d;
+  font-family: "poppins", sans-serif;
+}
+
+.urlCardContent {
+  width: 250px;
+  display: flex;
+}
+
+.urlCardContent img {
+  height: 22px;
+  width: auto;
+}
+#noRecords {
+  justify-content: center;
+  display: flex;
+  margin-top: 25%;
+  margin-left: 10%;
+  font-size: 18px;
+  font-family: "poppins", sans-serif;
+  font-weight: bold;
+}

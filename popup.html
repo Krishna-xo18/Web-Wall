@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block WebSite</title>
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div>
+      <div id="menu">
+        <p>WebWall</p>
+      </div>
+      <div id="mainPage">
+        <div id="domainNameWrapper">
+          <img id="img" alt="" width="35px" height="35px" />
+          <p id="urlWrapper">
+            <span id="content"></span><br /><span id="urlName"></span>
+          </p>
+        </div>
+        <div>
+          <input id="blockButton" type="button" value="Block this Site" />
+        </div>
+
+        <div>
+          <input id="disabledButton" type="button" value="Block this Site" />
+        </div>
+        <div>
+          <input
+            id="editBlockListButton"
+            type="button"
+            value="Edit Block List"
+          />
+        </div>
+        <div>
+          <input
+            id="blockButtonSocial"
+            type="button"
+            value="Block Social Media"
+          />
+        </div>
+      </div>
+
+      <div id="listPage">
+        <div id="cover">
+          <h2>Blocked Websites</h2>
+          <form method="get" action="">
+            <div class="tb">
+              <div class="td">
+                <input
+                  id="searchBar"
+                  type="text"
+                  placeholder="Search"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div id="blockSiteList"></div>
+
+        <div>
+          <p id="goBack"><img src="./goback.png" /></p>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
